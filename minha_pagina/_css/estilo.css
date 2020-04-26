@@ -1,0 +1,229 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap'); /*link com a fonte personalizavel que fomos buscar ao googl.fonts.com*/
+@font-face{  /* vamos criar uma fonte persolanizada de letras*/
+   font-family: "FontLogo"; /* nome que atribuimos a nossa fonte personalizavel*/
+   src: url("../_fonts/bubblegum-sans-regular.otf"); /* origem da pastaa onde se encontra a nossa fonte persolalizada*/
+}
+
+body {
+   font-family: Arial, sans-serif;
+    background-color:#dddddd; /* cor de fundo*/
+    color:rgba(0, 0, 0, 1) ; /* cor das letras*/
+}
+div#interface{ /* formatar div#interface*/
+   width: 900px;/* a uma largura de 800px*/
+   background-color: #ffffff; /* cor fundo interface*/
+   margin: -20px auto 0px auto; /* formatação autoamatica margens esq e dta*/
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);/*criar sombra volta objecto div*/
+   padding: 10px 10px 10px 10px;
+}
+
+p {   /* formatação de todos os paragrafos*/
+text-align: justify;  /*texto justificado direita e esquerda*/
+   text-indent: 50px; /*inicio de cada paragrafo 50 px á direita*/
+}
+a {
+   color: #606060;
+   text-decoration: none;
+}
+a:hover{
+   text-decoration: underline;
+}
+
+ /* posicionamento da imagem oculos pequenos*/
+header#cabeçalho img#icone { 
+   position: absolute;
+   left: 780px;
+   top: 70px;
+}
+border#cabeçalho{ 
+   border-bottom: 1px #606060 solid; /* criar uma linha solida para separar o cabeçalho*/
+   height: 150px;
+   background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /* background sem repetir a imagem e defeninndo a posição desl lat e desl vertical*/
+}
+header#cabeçalho h1{
+   font-family: Arial, sans-serif;  /*defenir o tipo letra titulo h1*/ 
+   font-size: 30pt;           /*defenir o tamanho da letra titulo h1*/
+   color: #606060;         /*defenir a cor da letra titulo h1*/
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);       /*criar uma sombra no titulo h1*/
+   padding: 0px;         /*   criar espaço interno no h1*/
+   margin-bottom: 0px;      /* criar  um espaço externo no h1*/
+}
+header#cabeçalho h2{
+   font-family: 'FontLogo', sans-serif;; /*defenir o tipo letra titulo h2 fui buscar fonte personalizavel ao goggle 2º linha de codigo topo desta folha de estilos*/
+   color: #888888;      /*defenir a cor da letra titulo h2*/
+   font-size: 15pt;     /*defenir o tamanho da letra titulo h2*/
+   padding: 0px;         /*   criar espaço interno no h2*/
+   margin-top: 0px;     /* criar  um espaço externo no h2*/
+}
+
+/*Daqui para baixo, formatação de imagens com legenda*/
+
+figure.foto-legenda criei uma classe foto-legenda dentro TAG figure na pagina principal do codigo HTML
+{
+     position:relative; /* objecto container(FIGURE)posição relativa ao lugar em que aparece no codigo HTML*/
+     border: 8px solid white; /* criar uma borda branca, dentro da imagem*/
+     box-shadow:1px 1px 4px black; /* criar sombra preta na borda imagem*/
+     /*display: inline-block;*/
+ }
+figure.foto-legenda.img /* criar um estilo imagem*/
+ {
+    width: 600px;       /*A imagem estava maior que largura da borda, com este comando, vai FICAR DENTRO INTERFACE */
+    height: 338px;      /* tudo que tiver dentro da imagem, altura da borda,vai aumentar ou diminuir  com a imagem FICANDO DENTRO DA INTERFACE*/
+ }
+figure.foto-legenda figcaption /*criar um estilo legenda*/
+ {
+    opacity: 0; /* vai esconder a legenda*/
+    /*position:absolute; /* ocupar uma posição absoluta dentro do container que é o figure*/
+    top: 0px;
+    background-color:rgba(0, 0, 0, 0.4); /* cor fundo legenda com 0.4 de transparencia*/
+    color:white; /* cor das letras legenda*/
+    width:600px;  /*a transparencia ficar a ocupar toda a imagem- largura*/
+    height:338px;/*a transparencia ficar a ocupar toda a imagem- altura*/
+    padding: 30px; /* criar um espaço dentro da legenda*/
+    box-sizing:border-box; /* vai criar uma box dentro da borda*/
+    transition:opacity 2s; /* tempo de transição entre a legenda passar de invisivel a visivel */
+ }
+figure.foto-legenda:hover figcaption/* quando passar o mouse por cima da imagem(figure.foto-legenda) a legenda (figcaptation) vai ficar visivel*/
+ {
+ opacity:1; /* vai mostrar a legenda ou tornar visivel a legenda*/
+}
+ /* FORMATAÇÃO DO MENU*/
+ nav#menu{ /* sempre que nav tenhaum id colcamosum #*/
+    display: block; /*mostrar o menu como um bloco unico*/
+ }
+
+ nav#menu ul{
+    list-style:none;
+    text-transform:uppercase;
+    position: absolute;
+    top: -20px;
+    left: 300px;
+ }
+nav#menu li{
+   display:inline-block;
+   background-color:#dddddd; /* cor cinzenta*/
+   padding: 10px;
+   margin: 2px;
+   transition: background-collor 1s; /* duração do efeito de transição*/
+}
+nav#menu li :hover{
+   background-color: #606060;/*efeito qd passar rato por cima os itens da lista fiacm cinzentos*/
+}
+nav#menu h1{
+   display: none;
+}
+nav#menu a { /* todo o nav que tenha um id menu e que tenha ancora (a)*/
+   color: black; /* a cor das letras passa +para preto*/
+   text-decoration: none; /* deixa de ter qualquer efeito, neste caso o sublinhado*/
+}
+ nav#menu a:hover{ /* todo nav com o id menu que tenha link (a-ancora) e efeito hover passar rato por cima*/
+    color: white; /* vou mudar a cor da letra*/
+    text-decoration: underline; /* o texto fique sublinhado*/
+ }
+/* daqui para baixo, vamos formatar article*/
+
+ article#noticia-principal h2 { /* vamos formatar todo os titulos h2*/
+font-size: 13pt;
+color: #606060;
+background-color: #dddddd;
+padding: 5px 0px 5px 10px;
+margin: 10px 0px 10px 0px;
+ }/* vamos ao html tornamos h2:data lançamento, especificações tecnicas,como funciona, o que voçê pode fazer com o google-glass*/
+ header#cabecalho-artigo h1{
+    font-family:"FontLogo", sans-serif ;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+ }
+ .direita{
+    text-align: right;
+ }
+ header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+
+ }
+ header#cabecalho-artigo h3{
+  font-size: 12px ;
+  color: #606060; 
+
+ }
+
+ /* Daqui para baixo, vamos formatar uma tabela*/
+
+ table#tabelaspec { /* vamos criar uma borda á volta de toda a tabela*/
+    border: 1px solid #606060;
+    border-spacing: 0px;/*vai definir o espaço entre as celulas, as margens das celulas*/
+    margin-left: auto; /*centralizar as celulas*/
+    margin-right: auto;/*centralizar as celulas*/
+ }
+ table#tabelaspec td{
+    border: 1px solid #606060; /* vamos criar uma borda á volta de cad uma das celulas*/
+    padding: 10px;/* vamos criar espaço dentro das celulas*/
+ }
+ table#tabelaspec td.ce{
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;/* letras em bold*/
+    text-align: right; /* vamos alinhar o texto a direita*/
+ }
+ table#tabelaspec td.cd{
+    background-color: #cecece;
+    text-align: left; /* vamos alinhar texto á esquerda*/
+ }
+ table#tabelaspec caption{/* formatação das legendas*/
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+ }
+ table#tabelaspec caption span{/*formatação legenda parte flutuante(span)*/
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+ }
+
+
+ /* Daqui para baixo, vamos criar corpo lateral e radapé*/
+  section#corpo{
+     display: block;         /* display aparecer como um bloco*/
+     width: 500px;          /* largura do  bloco*/
+     float: left;    /* para o bloco flutuar no lado direito da pagina*/
+     border-right: 1px solid #606060;    /* criei uma borda ou moldura no lado direito da section*/
+     padding-right: 15px;
+  }
+  aside#lateral{
+     display: block;       /* display aparecer como um bloco*/
+     width: 350px;        /* largura do  bloco*/
+     float: right; /*para o bloco flutuar no lado esquerdo da pagina*/ 
+     background-color:#dddddd ;
+     padding: 10px;
+     margin-top: 10px;
+     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  aside#lateral h1{/* vamos formatar os titulos h1 dentro do ASIDE*/
+     font-family: "FontLogo", sans-serif;
+     font-size: 20pt;
+     color: #606060;
+     margin-top: 0px;
+     
+  }
+  aside#lateral h2 {
+     background-color: #606060;
+     font-size: 13pt;
+     color: #ffffff;
+     padding: 5px;
+  }
+footer#rodape{
+   clear: both;/* para limpar os floats dos dois blocos anteriores*/
+   border-top: 1px solid #606060; /* vou criar uma borda ou moldura no cimo do bloco rodape*/
+}
+footer#rodape p{
+   text-align: center; /* vou alinhar ao centro da pagina, o texto do rodape ou footer*/
+}
