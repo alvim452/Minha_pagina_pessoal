@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap'); /*link com a fonte personalizavel que fomos buscar ao googl.fonts.com*/
 @font-face{  /* vamos criar uma fonte persolanizada de letras*/
-   font-family: "FontLogo"; /* nome que atribuimos a nossa fonte personalizavel*/
+   font-family: "FonteLogo"; /* nome que atribuimos a nossa fonte personalizavel*/
    src: url("../_fonts/bubblegum-sans-regular.otf"); /* origem da pastaa onde se encontra a nossa fonte persolalizada*/
 }
 
@@ -36,13 +36,13 @@ header#cabecalho img#icone {
    left: 925px;
    top: 40px;
 }
-border#cabecalho{ 
+header#cabecalho{ 
    border-bottom: 1px #606060 solid; /* criar uma linha solida para separar o cabeçalho*/
    height: 150px;
-   background: url("../_imagens/eupenso_fotoweb.png") no-repeat 0px 80px; /* background sem repetir a imagem e defeninndo a posição desl lat e desl vertical*/
+   background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /* background sem repetir a imagem e defeninndo a posição desl lat e desl vertical, ps- a foto +e muito grande portanto nãp aparece*/
 }
 header#cabecalho h1{
-   font-family: Arial, sans-serif;  /*defenir o tipo letra titulo h1*/ 
+   font-family: 'FonteLogo', sans-serif;  /*defenir o tipo letra titulo h1*/ 
    font-size: 30pt;           /*defenir o tamanho da letra titulo h1*/
    color: #606060;         /*defenir a cor da letra titulo h1*/
    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);       /*criar uma sombra no titulo h1*/
@@ -50,7 +50,7 @@ header#cabecalho h1{
    margin-bottom: 0px;      /* criar  um espaço externo no h1*/
 }
 header#cabecalho h2{
-   font-family: 'FontLogo', sans-serif;; /*defenir o tipo letra titulo h2 fui buscar fonte personalizavel ao goggle 2º linha de codigo topo desta folha de estilos*/
+   font-family: 'Titillium Web', sans-serif; /*defenir o tipo letra titulo h2 fui buscar fonte personalizavel ao goggle 2º linha de codigo topo desta folha de estilos*/
    color: #888888;      /*defenir a cor da letra titulo h2*/
    font-size: 15pt;     /*defenir o tamanho da letra titulo h2*/
    padding: 0px;         /*   criar espaço interno no h2*/
@@ -197,7 +197,7 @@ margin: 10px 0px 10px 0px;
      width: 500px;          /* largura do  bloco*/
      float: left;    /* para o bloco flutuar no lado direito da pagina*/
      border-right: 1px solid #606060;    /* criei uma borda ou moldura no lado direito da section*/
-     padding-right: 15px;
+     padding-right: 15px;  /* para descolar o texto da borda*/
   }
   aside#lateral{
      display: block;       /* display aparecer como um bloco*/
@@ -222,7 +222,7 @@ margin: 10px 0px 10px 0px;
      padding: 5px;
   }
 footer#rodape{
-   clear: both;/* para limpar os floats dos dois blocos anteriores*/
+   clear: both;/* para limpar os floats dos dois blocos  do section e do aside*/
    border-top: 1px solid #606060; /* vou criar uma borda ou moldura no cimo do bloco rodape*/
 }
 footer#rodape p{
