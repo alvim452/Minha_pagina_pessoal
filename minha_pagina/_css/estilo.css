@@ -11,11 +11,11 @@ body {
     color:rgba(0, 0, 0, 1) ; /* cor das letras*/
 }
 div#interface{ /* formatar div#interface*/
-   width: 900px;/* a uma largura de 800px*/
+   width: 900px;/* Largura da div fiva com uma largura de 800px*/
    background-color: #ffffff; /* cor fundo interface*/
    margin: -20px auto 0px auto; /* formatação autoamatica margens esq e dta*/
    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);/*criar sombra volta objecto div*/
-   padding: 10px 10px 10px 10px;
+   padding: 10px 10px 10px 10px;/* espaço interno do objecto para que o texto não fique colado ás margens; os valores são todos iguais posso colocar só padding:10px;*/
 }
 
 p {   /* formatação de todos os paragrafos*/
@@ -30,18 +30,18 @@ a:hover{
    text-decoration: underline;
 }
 
- /* posicionamento da imagem oculos pequenos*/
-header#cabeçalho img#icone { 
+ /* posicionamento da imagem oculos pequenos/eupenso_fotoweb.png*/
+header#cabecalho img#icone { 
    position: absolute;
-   left: 780px;
-   top: 70px;
+   left: 925px;
+   top: 40px;
 }
-border#cabeçalho{ 
+border#cabecalho{ 
    border-bottom: 1px #606060 solid; /* criar uma linha solida para separar o cabeçalho*/
    height: 150px;
-   background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /* background sem repetir a imagem e defeninndo a posição desl lat e desl vertical*/
+   background: url("../_imagens/eupenso_fotoweb.png") no-repeat 0px 80px; /* background sem repetir a imagem e defeninndo a posição desl lat e desl vertical*/
 }
-header#cabeçalho h1{
+header#cabecalho h1{
    font-family: Arial, sans-serif;  /*defenir o tipo letra titulo h1*/ 
    font-size: 30pt;           /*defenir o tamanho da letra titulo h1*/
    color: #606060;         /*defenir a cor da letra titulo h1*/
@@ -49,7 +49,7 @@ header#cabeçalho h1{
    padding: 0px;         /*   criar espaço interno no h1*/
    margin-bottom: 0px;      /* criar  um espaço externo no h1*/
 }
-header#cabeçalho h2{
+header#cabecalho h2{
    font-family: 'FontLogo', sans-serif;; /*defenir o tipo letra titulo h2 fui buscar fonte personalizavel ao goggle 2º linha de codigo topo desta folha de estilos*/
    color: #888888;      /*defenir a cor da letra titulo h2*/
    font-size: 15pt;     /*defenir o tamanho da letra titulo h2*/
@@ -57,30 +57,31 @@ header#cabeçalho h2{
    margin-top: 0px;     /* criar  um espaço externo no h2*/
 }
 
+
 /*Daqui para baixo, formatação de imagens com legenda*/
 
-figure.foto-legenda criei uma classe foto-legenda dentro TAG figure na pagina principal do codigo HTML
+figure.foto-legenda /*criei uma classe foto-legenda dentro TAG figure na pagina principal do codigo HTML*/
 {
-     position:relative; /* objecto container(FIGURE)posição relativa ao lugar em que aparece no codigo HTML*/
+     position: relative; /* objecto container(FIGURE)posição relativa ao lugar em que aparece no codigo HTML*/
      border: 8px solid white; /* criar uma borda branca, dentro da imagem*/
      box-shadow:1px 1px 4px black; /* criar sombra preta na borda imagem*/
      /*display: inline-block;*/
  }
-figure.foto-legenda.img /* criar um estilo imagem*/
+figure.foto-legenda img /* criar um estilo imagem*/
  {
-    width: 600px;       /*A imagem estava maior que largura da borda, com este comando, vai FICAR DENTRO INTERFACE */
-    height: 338px;      /* tudo que tiver dentro da imagem, altura da borda,vai aumentar ou diminuir  com a imagem FICANDO DENTRO DA INTERFACE*/
- }
+    width: 100%;       /*A imagem estava maior que largura da borda, com este comando, vai FICAR DENTRO INTERFACE */
+    height: 100%;      /* tudo que tiver dentro da imagem, altura da borda,vai aumentar ou diminuir  com a imagem FICANDO DENTRO DA INTERFACE*/
+   }
 figure.foto-legenda figcaption /*criar um estilo legenda*/
- {
-    opacity: 0; /* vai esconder a legenda*/
-    /*position:absolute; /* ocupar uma posição absoluta dentro do container que é o figure*/
-    top: 0px;
+   {
+    opacity: 0; /* vai esconder a legenda*/*/
+    position: absolute; /* ocupar uma posição absoluta dentro do container que é o figure*/
+    top: 10px;
     background-color:rgba(0, 0, 0, 0.4); /* cor fundo legenda com 0.4 de transparencia*/
-    color:white; /* cor das letras legenda*/
-    width:600px;  /*a transparencia ficar a ocupar toda a imagem- largura*/
-    height:338px;/*a transparencia ficar a ocupar toda a imagem- altura*/
-    padding: 30px; /* criar um espaço dentro da legenda*/
+    color: white; /* cor das letras legenda*/
+    width: 100%;  /*a transparencia ficar a ocupar toda a imagem- largura*/
+    height: 100%;/*a transparencia ficar a ocupar toda a imagem- altura*/
+    padding:10px; /* criar um espaço dentro da legenda*/
     box-sizing:border-box; /* vai criar uma box dentro da borda*/
     transition:opacity 2s; /* tempo de transição entre a legenda passar de invisivel a visivel */
  }
@@ -90,28 +91,28 @@ figure.foto-legenda:hover figcaption/* quando passar o mouse por cima da imagem(
 }
  /* FORMATAÇÃO DO MENU*/
  nav#menu{ /* sempre que nav tenhaum id colcamosum #*/
-    display: block; /*mostrar o menu como um bloco unico*/
+    display: block; /*mostrar o menú como um bloco unico*/
  }
 
  nav#menu ul{
-    list-style:none;
-    text-transform:uppercase;
-    position: absolute;
-    top: -20px;
+    list-style:none; /*retirar as bolinhas (marcadores)*/
+    text-transform:uppercase;/* letras para maiusculas*/
+    position: absolute;/* posição livre dentro do site e fora do container (container=menú)*/
+    top: -20px;/* o zero 0 é o topo da pagina logo como eu quero abaixo do topo coloco um valor negativo*/
     left: 300px;
  }
 nav#menu li{
-   display:inline-block;
-   background-color:#dddddd; /* cor cinzenta*/
-   padding: 10px;
-   margin: 2px;
+   display:inline-block;/* um bloco seja exibido na mesma linha*/
+   background-color:#dddddd; /* fundo cor cinzenta*/
+   padding: 10px;/* criar espaço dentro das caixas*/
+   margin: 2px; /* espaço fora do objecto(caixas)*/
    transition: background-collor 1s; /* duração do efeito de transição*/
 }
 nav#menu li :hover{
-   background-color: #606060;/*efeito qd passar rato por cima os itens da lista fiacm cinzentos*/
+   background-color: #606060;/*efeito qd passar rato por cima os itens da lista fiacm  cinzentos mais escuros*/
 }
 nav#menu h1{
-   display: none;
+   display: none;/* esconder a frase MENU PRINCIPAL(h1)*/
 }
 nav#menu a { /* todo o nav que tenha um id menu e que tenha ancora (a)*/
    color: black; /* a cor das letras passa +para preto*/
@@ -204,7 +205,7 @@ margin: 10px 0px 10px 0px;
      float: right; /*para o bloco flutuar no lado esquerdo da pagina*/ 
      background-color:#dddddd ;
      padding: 10px;
-     margin-top: 10px;
+     margin-top: 20px;
      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   }
   aside#lateral h1{/* vamos formatar os titulos h1 dentro do ASIDE*/
