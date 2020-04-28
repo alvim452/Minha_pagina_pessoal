@@ -132,7 +132,7 @@ padding: 5px 0px 5px 10px;
 margin: 10px 0px 10px 0px;
  }/* vamos ao html tornamos h2:data lançamento, especificações tecnicas,como funciona, o que voçê pode fazer com o google-glass*/
  header#cabecalho-artigo h1{
-    font-family:"FontLogo", sans-serif ;
+    font-family:"FonteLogo", sans-serif ;
     font-size: 20pt;
     color: #606060;
     margin-bottom: 0px;
@@ -151,46 +151,9 @@ margin: 10px 0px 10px 0px;
  header#cabecalho-artigo h3{
   font-size: 12px ;
   color: #606060; 
-
  }
 
- /* Daqui para baixo, vamos formatar uma tabela*/
-
- table#tabelaspec { /* vamos criar uma borda á volta de toda a tabela*/
-    border: 1px solid #606060;
-    border-spacing: 0px;/*vai definir o espaço entre as celulas, as margens das celulas*/
-    margin-left: auto; /*centralizar as celulas*/
-    margin-right: auto;/*centralizar as celulas*/
- }
- table#tabelaspec td{
-    border: 1px solid #606060; /* vamos criar uma borda á volta de cad uma das celulas*/
-    padding: 10px;/* vamos criar espaço dentro das celulas*/
- }
- table#tabelaspec td.ce{
-    color: #ffffff;
-    background-color: #606060;
-    vertical-align: top;
-    font-weight: bold;/* letras em bold*/
-    text-align: right; /* vamos alinhar o texto a direita*/
- }
- table#tabelaspec td.cd{
-    background-color: #cecece;
-    text-align: left; /* vamos alinhar texto á esquerda*/
- }
- table#tabelaspec caption{/* formatação das legendas*/
-    color: #888888;
-    font-size: 13pt;
-    font-weight: bolder;
- }
- table#tabelaspec caption span{/*formatação legenda parte flutuante(span)*/
-    display: block;
-    float: right;
-    color: #000000;
-    font-size: 8pt;
-    margin-top: 10px;
- }
-
-
+ 
  /* Daqui para baixo, vamos criar corpo lateral e radapé*/
   section#corpo{
      display: block;         /* display aparecer como um bloco*/
@@ -199,17 +162,56 @@ margin: 10px 0px 10px 0px;
      border-right: 1px solid #606060;    /* criei uma borda ou moldura no lado direito da section*/
      padding-right: 15px;  /* para descolar o texto da borda*/
   }
+
+  /* Daqui para baixo, vamos formatar uma tabela*/
+
+ table#tabelaspec { /* vamos criar uma borda á volta de toda a tabela*/
+   border: 1px solid #606060; /* borda externa da tabela com cinzento escuro*/
+   border-spacing: 0px;/*vai definir o espaço entre as celulas, as margens das celulas, vai retirar o espaço que havia entre cda borda de cada celula*/
+   margin-left: auto; /*centralizar as celulas*/
+   margin-right: auto;/*centralizar as celulas*/
+}
+table#tabelaspec td{
+   border: 1px solid #606060; /* vamos criar uma borda á volta de cada uma das celulas*/
+   padding: 10px;/* vamos criar espaço dentro das celulas*/text-align: center;
+    vertical-align: middle;/* as palvras das celulas camara e conectividade vão ficar alinhadas ao topo*/
+}
+table#tabelaspec td.ce{ /*objectos td na coluna da esquerda ce*/
+   color: #ffffff;
+   background-color: #606060;
+   vertical-align:top ;/* aclasse vai sobrepor ao definido para a taga principal, linha 178 deste codigo*/
+   font-weight: bold;/* letras em bold*/
+   /* vamos alinhar o texto a direita*/
+}
+table#tabelaspec td.cd{ /*objectos td na coluna da direita cd*/
+   background-color: #cecece;
+   text-align: left; /* vamos alinhar texto á esquerda*/
+}
+table#tabelaspec caption{/* formatação das legendas*/
+   color: #888888;
+   font-size: 13pt;
+   font-weight: bolder;
+}
+table#tabelaspec caption span{/*formatação legenda parte flutuante(span): MAR 2013*/
+   display: block;
+   float: right;
+   color: #000000;
+   font-size: 8pt;
+   margin-top: 10px;
+}
+* Na tabela anterio, criei classes para objectos na coluna da esquerda ce, e classes para objectos na coluna da direita cd*/
+
   aside#lateral{
      display: block;       /* display aparecer como um bloco*/
      width: 350px;        /* largura do  bloco*/
      float: right; /*para o bloco flutuar no lado esquerdo da pagina*/ 
-     background-color:#dddddd ;
+     background-color: #dddddd;
      padding: 10px;
-     margin-top: 20px;
+     margin-top: 10px;
      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   }
   aside#lateral h1{/* vamos formatar os titulos h1 dentro do ASIDE*/
-     font-family: "FontLogo", sans-serif;
+     font-family: 'FonteLogo", sans-serif';
      font-size: 20pt;
      color: #606060;
      margin-top: 0px;
