@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+div#tv-radio{ /* criar uma divisão da pagina com uma imagem de fundo com um ecrã de tv e um radio antigo*/
+    width: 900px;
+    height: 580px;
+    margin: auto;
+    background: url("../_imagens/radio-tv.png") no-repeat;
+}
+audio#musica{   /* posicionamento do player de som*/
+    display: block;
+    position: relative;
+    left: 574px;
+    top: 488px;
+    width: 300px;
+}
+video#filme{   /* posicionamento do pkayer de video*/
+    display: block;
+    position: relative;
+    left: 90px;
+    top: 85px;
+    width: 440px;
+}

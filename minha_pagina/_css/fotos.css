@@ -1,0 +1,94 @@
+@charset "UTF-8";
+ul#album-fotos {
+    width: 700px;
+    margin:0 auto ;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;/* cada item da lista vai aparecer sem os bullets*/
+}
+ul#album-fotos li{
+    float: left;/* um a esquerda do outro.lado a lado*/
+    width: 200px;/* vai gerar um qudro de 200x200 para cada item*/
+    height: 200px;/* vai gerar um qudro de 200x200 para cada item*/
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0,0,0, 0.4);
+    -webkit-transition: all 0.4s ease;/* efeito transição em todos os li (all); tempo de transição (0.4s); de maneira suave(ease)*/
+}
+ul#album-fotos li span{   /*formatar as legendas*/
+    opacity: 0;/* esconde a legenda*/
+    color: #ffffff;   /* cor das letras das legendas*/
+    box-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 9pt;
+    line-height: 370px; /* vai fazer com que a legenda desça para a base da foto*/
+    padding: 5px;
+}
+ul#album-fotos li:hover{
+    -webkit-transform: scale(1.5);/* alterei o própio li, efeito de zoom*/
+}
+ul#album-fotos li:hover span{
+    opacity: 1;/* mostra legenda qd passar o mouse, alterei o span*/
+}
+
+ul#album-fotos li#foto01{/* colocar uma foto dentro de cada item li*/
+    background: url('../_imagens/galeria-01.jpg') no-repeat;
+    background-position: 50% 50%;/* vai alterar o posicionamento da imagem, vai mostrar o centro da imagem*/
+    background-size: 400px 400px;/* vai definir o tamanho original das imagens, maior que as caixas 200x200*/
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto01:hover{/* efeito zoom out*/
+    background-position: 0px 0px;/* vai mostrar a parte de cima da tela*/
+    background-size: 200px 200px;/* reduz a tela para 200x200, mostra foto inteira dentro da tela*/
+}
+ul#album-fotos li#foto02{/* colocar uma foto dentro de cada item li*/
+    background: url('../_imagens/galeria-02.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto02:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto03{/* colocar uma foto dentro de cada item li*/
+    background: url('../_imagens/galeria-03.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto03:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto04{/* colocar uma foto dentro de cada item li*/
+    background: url('../_imagens/galeria-04.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto04:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto05{/* colocar uma foto dentro de cada item li*/
+    background: url('../_imagens/galeria-05.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto05:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto06{/* colocar uma foto dentro de cada item li*/
+    background: url('../_imagens/galeria-06.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album-fotos li#foto06:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
