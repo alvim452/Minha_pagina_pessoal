@@ -29,7 +29,7 @@ ul#album-fotos li:hover{
     -webkit-transform: scale(1.5);/* alterei o própio li, efeito de zoom*/
 }
 ul#album-fotos li:hover span{
-    opacity: 1;/* mostra legenda qd passar o mouse, alterei o span*/
+    opacity: 1;/* mostra legenda qd passar o mouse (opacity 1), alterei o span*/
 }
 
 ul#album-fotos li#foto01{/* colocar uma foto dentro de cada item li*/
